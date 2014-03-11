@@ -169,7 +169,10 @@ life_licenses =
 	["license_civ_iron","civ"],
 	["license_civ_sand","civ"],
 	["license_civ_salt","civ"],
-	["license_civ_cement","civ"]
+	["license_civ_cement","civ"],
+	["licence_civ_taxi","civ"],
+	["licence_civ_depa","civ"],
+	["licence_civ_ambu","civ"]
 ];
 
 //Setup License Variables
@@ -242,7 +245,7 @@ buy_array =
 	["redgull",1500],
 	["fuelF",850],
 	["peach",68],
-	["spikeStrip",2500]
+	["spikeStrip",1200]
 ];
 __CONST__(buy_array,buy_array);
 
@@ -349,3 +352,19 @@ life_garage_sell =
 	["B_MRAP_01_F",10000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
+
+// Add Phenix
+
+ph_shop_class =
+[
+	"Land_i_Shop_01_V1_F",
+	"Land_i_Shop_01_V2_F",
+	"Land_i_Shop_01_V3_F",
+	"Land_u_Shop_01_V1_F",
+	"Land_i_Shop_02_V1_F",
+	"Land_i_Shop_02_V2_F",
+	"Land_i_Shop_02_V3_F",
+	"Land_u_Shop_02_V1_F"
+];
+
+__CONST__(ph_shop_class,ph_shop_class);
