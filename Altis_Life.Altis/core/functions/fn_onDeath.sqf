@@ -58,7 +58,7 @@ if(side _source == west && vehicle _source == _source && playerSide == civilian)
 {
 	[[player,_source,true],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
 	[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
-	//[[getPlayerUID player],"life_fnc_wantedPunish",false,false] spawn life_fnc_MP;
+	[[getPlayerUID player],"life_fnc_wantedPunish",false,false] spawn life_fnc_MP;
 }
 	else
 {
