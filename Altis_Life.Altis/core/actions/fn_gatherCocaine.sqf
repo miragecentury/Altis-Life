@@ -5,7 +5,7 @@
 	Gathers cocaine?
 */
 private["_sum"];
-_sum = ["cocaine",1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+_sum = ["cocaine",(random 2)+1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 
 if(_sum > 0) then
 {
@@ -13,7 +13,7 @@ if(_sum > 0) then
 	titleText["Gathering Cocaine...","PLAIN"];
 	titleFadeOut 5;
 	sleep 5;
-	if(([true,"cocaine",1] call life_fnc_handleInv)) then
+	if(([true,"cocaine",_sum] call life_fnc_handleInv)) then
 	{
 		titleText["You have collected some Cocaine.","PLAIN"];
 	};

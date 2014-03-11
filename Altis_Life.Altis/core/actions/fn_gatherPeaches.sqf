@@ -6,7 +6,7 @@
 	Gathers apples?
 */
 private["_sum"];
-_sum = ["peach",3,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
+_sum = ["peach",(random 4)+1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 
 if(_sum > 0) then
 {
