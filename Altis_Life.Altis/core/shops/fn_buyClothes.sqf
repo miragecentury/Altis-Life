@@ -19,5 +19,8 @@ _price = 0;
 if(_price > life_cash) exitWith {titleText["Sorry sir, you don't have enough money to buy those clothes.","PLAIN"];};
 life_cash = life_cash - _price;
 
+[] call life_fnc_sessionUpdate;
+[] call life_fnc_saveGear;
+
 life_clothesPurchased = true;
 closeDialog 0;

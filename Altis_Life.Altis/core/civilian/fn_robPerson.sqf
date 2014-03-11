@@ -15,6 +15,7 @@ if(life_cash > 0) then
 	[[getPlayerUID _robber,name _robber,"211"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	[[1,format["%1 has robbed %2 for $%3",name _robber,name player,[life_cash] call life_fnc_numberText]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 	life_cash = 0;
+	[] call life_fnc_sessionUpdate;
 }
 	else
 {

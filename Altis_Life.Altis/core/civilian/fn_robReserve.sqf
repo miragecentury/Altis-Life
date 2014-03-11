@@ -62,6 +62,7 @@ switch(true) do
 			life_use_atm = true;
 		};
 		life_cash = life_cash + _funds;
+		[] call life_fnc_sessionUpdate;
 		[[_vault,1,_funds],"TON_fnc_robberyState",false,false] spawn life_fnc_MP;
 	};
 };

@@ -261,7 +261,7 @@ if(_veh in ["B_MRAP_01_F","C_SUV_01_F"] && playerSide == west) then {
 
 life_vehicles set[count life_vehicles,_vehicle];
 life_cash = life_cash - _price;
-
+[] call life_fnc_sessionUpdate;
 if(playerSide == west) then
 {
 	if(_veh == "C_Offroad_01_F") then

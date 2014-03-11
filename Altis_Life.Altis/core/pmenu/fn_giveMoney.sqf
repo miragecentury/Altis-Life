@@ -27,5 +27,5 @@ life_cash = life_cash - (parseNumber(_amount));
 [1,false] call life_fnc_sessionHandle;
 [[_unit,_amount,player],"life_fnc_receiveMoney",_unit,false] spawn life_fnc_MP;
 [] call life_fnc_p_updateMenu;
-
+[] call life_fnc_sessionUpdate;
 ctrlShow[2001,true];
