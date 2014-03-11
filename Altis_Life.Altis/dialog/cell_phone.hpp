@@ -48,6 +48,34 @@ class Life_cell_phone {
 			h = (1 / 25);
 		};
 		
+		//ajout bouton depannage et taxi
+		class TextDepanneuseButton : life_RscButtonMenu 
+		{
+			idc = 3022;
+			text = "SMS Depann.";
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			onButtonClick = "[] call fnc_cell_depall";
+			
+			x = 0.53;
+			y = 0.25;
+			w = 0.2;
+			h = (1 / 25);
+		};
+		
+		class TextTaxiButton : life_RscButtonMenu 
+		{
+			idc = 3023;
+			text = "SMS Taxi";
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			onButtonClick = "[] call fnc_cell_taxi";
+			
+			x = 0.32;
+			y = 0.25;
+			w = 0.2;
+			h = (1 / 25);
+		};	
+		//fin modif
+		
 		class textEdit : Life_RscEdit {
 		
 		idc = 3003;
